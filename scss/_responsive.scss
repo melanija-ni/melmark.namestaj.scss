@@ -1,0 +1,35 @@
+@include media-md {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 50%;
+      background: transparent;
+      text-align: right;
+
+      &__item {
+        display: inline;
+        padding-right: 1.5rem;
+      }
+      &__link {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .opis-o_nama {
+    font-size: 1.5rem;
+  }
+  .galerija {
+    &__bio-image {
+      height: 40vh;
+    }
+  }
+  .galerija__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
